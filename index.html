@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Taiwo's Portfolio.</h1>
+      <div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="intro section">
+      <p>Hello,</p>
+      <p style="font-size: 35px; color: darkblue;">I'm Taiwo.</p>
+      <p>Software Engineer, Lagos</p>
+      <button>
+        <a href="mailto:taiwofamakinde@icloud.com?subject=Interested%20In%20Working%20With%20You">
+          Hire Me
+        </a>
+      </button>
+    </div>
+
+    <div class="section">
+      <h2 class="sub-heading" id="about">About</h2>
+      <p>I am a Software Engineer with 3 years of professional experience. I am skilled in React, Vue and Angular.
+        I am also skilled in Version Control and Technical Writing.
+      </p>
+      <p>My hobbies include:</p>
+      <ul>
+        <li>Watching movies</li>
+        <li>Singing</li>
+        <li>Travelling</li>
+        <li>Reading</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="sub-heading" id="projects">Projects</h2>
+      <p>Here are some of the projects I have worked on. 
+        You can find more in my 
+        <a href="https://github.com/taiwocodes" target="_blank">github repository</a>.
+      </p>
+      <ol>
+        <li>Calaculator</li>
+        <li>Cash Register</li>
+        <li>On-screen Keyboard</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2 class="sub-heading">Gallery</h2>
+      <img
+      src="https://images.unsplash.com/photo-1571988840298-3b5301d5109b?auto=format&fit=crop&q=80&w=387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="a cat image"
+      style="height: 100px;"
+      />
+    </div>
+
+    <div class="section">
+      <h2 class="sub-heading" id="contact">Contact Me</h2>
+      <p>You can reach out to me on <a href="https://www.linkedin.com/in/taiwo-famakinde-50284315b/" target="_blank"> LinkedIn</a>,
+        or shoot me a message and let me know how we can work together!</p>
+        <form class="form-section" id="contactForm">
+          <div class="form-field">
+            <label id="names">Name:</label> <br/>
+            <input type="text" placeholder="enter your name"/>
+          </div>
+          <div class="form-field">
+            <label>Message:</label> <br/>
+            <textarea type="text" placeholder="type your message"></textarea>
+          </div>
+          <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <div id="thankYouMsg" style="display: none;">
+          <p>Thank you for your message. I'd be in touch!</p>
+        </div>
+      </div>
+  </body>
+</html>
